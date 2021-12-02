@@ -1,0 +1,9 @@
+html {
+  margin: 0;
+}
+
+svg {
+  z-index: -5;
+  position: absolute;
+  bottom: -10%;
+}

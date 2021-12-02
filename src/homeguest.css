@@ -1,3 +1,7 @@
 #welcome {
   margin-top: 20px;
 }
+
+html {
+  margin: 0;
+}
