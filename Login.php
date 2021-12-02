@@ -68,7 +68,7 @@
               <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="#about">Sewa Mobil</a>
                 <a class="nav-link" href="contactus.html">Hubungi Kami</a>
-                <a class="nav-link" href="Login.html" style="color: white"><b>Masuk</b></a>
+                <a class="nav-link" href="Login.php" style="color: white"><b>Masuk</b></a>
               </div>
             </div>
           </div>
@@ -142,8 +142,8 @@
                     <p class="card-subtitle m-2 text-muted">
                       Belum punya akun?
                     </p>
-                    <button
-                      type="submit"
+                    <a
+                      href="register.php"
                       class="btn btn-outline-dark"
                       style="
                         width: 256px;
@@ -152,7 +152,7 @@
                       "
                     >
                       Daftar
-                    </button>
+</a>    
                   </div>
                 </form>
               </div>
