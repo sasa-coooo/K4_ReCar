@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Recar - Welcome</title>
-  <link rel="stylesheet" href="" />
   <!-- required meta tag -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +9,6 @@
   <!-- bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="style.css" />
   <!-- bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
@@ -45,10 +42,10 @@
   <!-- Akhir Navbar -->
   <div class="spacer" style="margin-top: 100px;"></div>
   <!-- Content -->
-  <div class="container">
-    <div class="card text-center" style="border-radius:15px; max-width: 465px;">
+  <div class="container text-center">
+    <div class="card" style="border-radius:15px; max-width: 465px;">
       <div class="card-body" style="width: 100%;">
-        <div class=" logohead" style="margin: auto; margin-top: 20px;" align="center">
+        <div class=" logohead" style="margin: auto; margin-top: 20px;" allign="center">
           <img class="logo" src="src/photo/recaricon2.png" style="max-width: 200px v; margin-bottom:20px;" alt="">
           <h6 class="card-subtitle mb-2 text-muted">Silahkan login untuk memulai</h6>
         </div>
@@ -61,7 +58,7 @@
             <div class="forgot">
               <a href="#forgot" class="text-reset" style="">Lupa password?</a>
             </div>
-            <div class="button" align="center">
+            <div class="button" allign="center">
               <button type="submit" class="btn btn-primary mt-3" style="width: 256px; border-radius:15px; font-weight: bold;">Login</button>
               <p class="card-subtitle m-2 text-muted">Belum punya akun?</p>
               <button type="submit" class="btn btn-outline-dark" style="width: 256px; border-radius:15px; font-weight: bold;">Daftar</button>
