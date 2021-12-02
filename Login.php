@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="src/homeguest.css" />
+    <link rel="stylesheet" href="src/login.css" />
     <!-- bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -76,7 +76,7 @@
         <!-- Akhir Navbar -->
     <!-- awal Judul -->
     <section id="welcome">
-      <div class="container"  style="display: flex; justify-content: center;">
+      <div class="container"  style="display: flex; justify-content: center; margin-top:100px;">
         <div class="row">
           <div class="card" style="border-radius: 15px; max-width: 465px">
             <div class="card-body" style="width: 100%">
@@ -160,6 +160,9 @@
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 320"><path fill="#396eb0" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,213.3C384,235,480,213,576,181.3C672,149,768,107,864,80C960,53,1056,43,1152,58.7C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
   </body>
+  <footer>
+  </footer>
 </html>
