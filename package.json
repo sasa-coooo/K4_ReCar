@@ -1,0 +1,22 @@
+{
+  "name": "k4_recar",
+  "version": "1.0.0",
+  "description": "Sistem Berbasis Web Rental Mobil",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasa-coooo/K4_ReCar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasa-coooo/K4_ReCar/issues"
+  },
+  "homepage": "https://github.com/sasa-coooo/K4_ReCar#readme",
+  "dependencies": {
+    "local-web-server": "^5.1.1"
+  }
+}
