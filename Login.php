@@ -46,7 +46,7 @@
   <div class="spacer" style="margin-top: 100px;"></div>
   <!-- Content -->
   <div class="container">
-    <div class="card" style="border-radius:15px; max-width: 465px;">
+    <div class="card text-center" style="border-radius:15px; max-width: 465px;">
       <div class="card-body" style="width: 100%;">
         <div class=" logohead" style="margin: auto; margin-top: 20px;" align="center">
           <img class="logo" src="src/photo/recaricon2.png" style="max-width: 200px v; margin-bottom:20px;" alt="">
