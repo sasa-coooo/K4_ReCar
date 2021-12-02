@@ -33,11 +33,7 @@
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="#about">Sewa Mobil</a>
             <a class="nav-link" href="#gallery">Hubungi Kami</a>
-<<<<<<< HEAD:index.html
-            <a class="nav-link" href="Login.html" style="color: white"><b>Masuk</b></a>
-=======
             <a class="nav-link" href="Login.php" style="color: white"><b>Masuk</b></a>
->>>>>>> 80c0e5a1c77d494c0d84b5ebdf2e868fe06b1669:index.php
           </div>
         </div>
       </div>
