@@ -33,7 +33,7 @@
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="#about">Sewa Mobil</a>
             <a class="nav-link" href="#gallery">Hubungi Kami</a>
-            <a class="nav-link" href="/Login.php" style="color: white"><b>Masuk</b></a>
+            <a class="nav-link" href="Login.php" style="color: white"><b>Masuk</b></a>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
               <h1 class="mt-5" style="margin-top: 30rem">Hallo <b>Pengunjung</b>.</h1>
             </div>
             <p class="pt-4 text-black text-lg-start" style="font-size: large">Re<b>Car</b> merupakan sebuah platform yang menyediakan jasa penyewaan / rental mobil. Kami telah memiliki kantor cabang di 23 Provinsi di Indonesia!</p>
-            <a class="btn btn-success" style="color: #ffffff; background-color: #00c72c" href="Login.html"> Sewa Sekarang</a>
+            <a class="btn btn-success" style="color: #ffffff; background-color: #00c72c" href="#"> Sewa Sekarang</a>
           </div>
         </div>
       </div>
