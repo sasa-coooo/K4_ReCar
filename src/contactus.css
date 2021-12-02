@@ -1,0 +1,6 @@
+#pict {
+  background-image: url(/src/photo/blob-haikei.svg);
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
