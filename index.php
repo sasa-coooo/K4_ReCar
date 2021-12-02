@@ -40,7 +40,7 @@
     </nav>
     <!-- Akhir Navbar -->
     <!-- awal Judul -->
-    <section id="welcome">
+    <section id="welcome" data-aos="fade-down">
       <div class="container">
         <div class="row">
           <div class="col">
