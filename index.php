@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,6 +21,15 @@
 
     <!-- Typed.JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+      <style>
+            *{
+                font-family: 'Saira', sans-serif;
+            }
+        </style>
   </head>
   <body>
     <!-- Awal Navbar -->
@@ -31,7 +41,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#about">Sewa Mobil</a>
+            <a class="nav-link" href="rental.php">Sewa Mobil</a>
             <a class="nav-link" href="contactus.html">Hubungi Kami</a>
             <a class="nav-link" href="Login.php" style="color: white"><b>Masuk</b></a>
           </div>
@@ -48,10 +58,10 @@
           </div>
           <div class="col mt-5 pt-3">
             <div class="row">
-              <h1 class="mt-5" style="margin-top: 30rem">Hallo <b>Pengunjung</b>.</h1>
+              <h1 class="mt-5" style="margin-top: 30rem">Halo ! <b>Pengunjung</b>.</h1>
             </div>
             <p class="pt-4 text-black text-lg-start" style="font-size: large">Re<b>Car</b> merupakan sebuah platform yang menyediakan jasa penyewaan / rental mobil. Kami telah memiliki kantor cabang di 23 Provinsi di Indonesia!</p>
-            <a class="btn btn-success" style="color: #ffffff; background-color: #00c72c" href="#"> Sewa Sekarang</a>
+            <a class="btn btn-success" style="color: #ffffff;" href="#"> Sewa Sekarang</a>
           </div>
         </div>
       </div>

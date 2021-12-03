@@ -51,12 +51,12 @@
         <!-- Akhir Navbar -->
     <!-- awal Judul -->
     <section id="welcome">
-      <div class="container" style="display: flex; justify-content: center;">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000" style="display: flex; justify-content: center;">
         <div class="row">
           <div class="card" style="border-radius: 15px; width: 765px;">
-          <a href="login.php" class="back text-black">
-              <img src="/src/photo/arrow.png" href="login.php">Back
-              </a>  
+            <a href="login.php" class="back text-black" style="position: absolute; margin: 30px;" >
+              <img src="src/photo/arrow.png" href="login.php">Back
+            </a>  
             <div class="card-body">
               <div
                 class="logohead mb-4"
@@ -66,7 +66,7 @@
                 <img
                   class="logo"
                   src="src/photo/recaricon2.png"
-                  style="max-width: 200px; margin-bottom: 30px"
+                  style="max-width: 150px; margin-bottom: 30px"
                   alt=""
                 />
                 <h3 class="card-subtitle mb-2" style="color: #333; font-weight: bold; ">PENDAFTARAN AKUN BARU</h3>
@@ -133,4 +133,7 @@
     </div>
     </section>
   </body>
+  <script>
+    AOS.init()
+  </script>
 </html>
