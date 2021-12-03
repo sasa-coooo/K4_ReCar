@@ -90,9 +90,16 @@ if (empty($hasil['username'])) {
                             </select>
 
                             <label class="mt-3" for="merek" style="font-weight: bold; color: #333;">Merek Mobil</label>
-                            <select id="merekMobil" class="form-control" style="border-radius: 15px;">
-                                <option selected>Pilih Merek Mobil</option>
-                                <option>...</option>
+                            
+                            <select  id="merekMobil" class="form-control" style="border-radius: 15px;" onchange="carImg()">
+                                <option selected value="src/photo/car-img/default.jpg">Pilih Merek Mobil</option>
+                                <!-- Daftar Mobil -->
+                                <?php 
+                                    $mobil = mysqli_query($koneksi, "SELECT * FROM tb_mobil");
+                                    foreach ($mobil as $key) :
+                                ?>
+                                <option value="<?php echo $key['gambar']; ?>" ><?php echo $key['nama_mobil']; ?></option>
+                                <?php endforeach; ?>
                             </select>
 
                             <div class="row mt-3">
@@ -104,7 +111,9 @@ if (empty($hasil['username'])) {
                                     <label for="lamasewa" style="font-weight: bold; color: #333;">Lama Sewa</label>
                                     <select id="merekMobil" class="form-control" style="border-radius: 15px;">
                                         <option selected>Lama Sewa</option>
-                                        <option>...</option>
+                                        <option value="8">8 Jam</option>
+                                        <option value="12">12 Jam</option>
+                                        <option value="24">24 Jam</option>
                                     </select>                                    
                                 </div>
                             </div>
@@ -113,12 +122,13 @@ if (empty($hasil['username'])) {
                             </div>
                         </div>
                         <div class="col mt-3" style="margin-left: 30px;" align="center">
-                            <img src="src/photo/bmw.webp" alt="" style="max-width: 300px; border-radius: 15px;">
+                            <img id="gambarMobil" src="src/photo/car-img/default.jpg" alt="" style="max-width: 300px; border-radius: 15px;">
                             <div class="keterangan mt-3" align="center">
                                 <label for="car-status">Status: <b style="color: green">Ready</b></label><br>
-                                <label for="harga">Harga Sewa : <b style="color: red">Rp. 99.999.999.99</b></label>
+                                <label id="harga" for="harga">Harga Sewa : <b style="color: red">Rp. 2.400.000</b></label>
                             </div>
                         </div>
+
                     </div>
                     </form>
                 </div>
@@ -130,5 +140,10 @@ if (empty($hasil['username'])) {
   </body>
   <script>
     AOS.init()
+
+    function carImg() {
+        var x = document.getElementById("merekMobil").value;
+        document.getElementById("gambarMobil").src = x;  
+        }
   </script>
 </html>
