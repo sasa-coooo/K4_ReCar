@@ -86,7 +86,13 @@ if (empty($hasil['username'])) {
                             <label for="pengambilan" style="font-weight: bold; color: #333;">Lokasi Pengambilan</label>
                             <select id="lkPengambilan" class="form-control" style="border-radius: 15px;">
                                 <option selected>Pilih Lokasi Pengambilan</option>
-                                <option>...</option>
+                                <!-- Daftar Mobil -->
+                                <?php 
+                                    $mobil = mysqli_query($koneksi, "SELECT * FROM tb_mobil");
+                                    foreach ($mobil as $key) :
+                                ?>
+                                <option value="<?php echo $key['gambar']; ?>" ><?php echo $key['nama_mobil']; ?></option>
+                                <?php endforeach; ?>
                             </select>
 
                             <label class="mt-3" for="merek" style="font-weight: bold; color: #333;">Merek Mobil</label>
