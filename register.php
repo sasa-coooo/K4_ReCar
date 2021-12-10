@@ -95,7 +95,8 @@
                             <label for="jk" style="font-weight: bold; color: #333;">Jenis Kelamin</label>
                             <select id="inputJk" class="form-control" style="border-radius: 15px;">
                                 <option selected>Jenis Kelamin...</option>
-                                <option>...</option>
+                                <option>Laki Laki</option>
+                                <option>Perempuan</option>
                             </select>
                         </div>
                     </div>
