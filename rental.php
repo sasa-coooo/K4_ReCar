@@ -66,90 +66,137 @@ if (empty($hasil['username'])) {
       </div>
     </nav>
     <!-- Akhir Navbar -->
-    <!-- awal Judul -->
     <section id="welcome">
-      <div class="container" data-aos="fade-down" data-aos-duration="1000" >
-        <div class="row"  style="display: flex; justify-content: center;">
-            <div class="welcomer mt-4 mb-3">
-                <h2>Selamat Datang! Kak, <b><?php echo $hasil['nama_lengkap']; ?></b></h2>
-                <h4>Ingin sewa mobil apa?</h4>
+      <div class="container" style="margin-top: 100px">
+        <div class="row">
+          <div class="col">
+            <img src="src/photo/PhotoVector.png" alt="" class="rounded float-left" width="500rem" style="margin-top: 2rem" />
+          </div>
+          <div class="col mt-5 pt-3">
+            <div class="row">
+              <h1 class="mt-5" style="margin-top: 30rem">Halo ! <b>Pengunjung</b>.</h1>
             </div>
-          <div class="card" style="border-radius: 15px; width: 900px;">
-            <div class="card-body">
-              <div class="logohead mb-4" style="margin: auto; margin-top: 20px" align="center">
-                <h3 class="card-subtitle mb-2" style="color: #333;">Re<b>Car</b> Sewa Mobil</h3>
-                </div>
-                <div class="user-register" style="padding-left: 30px; padding-right: 30px;">
-                    <form method="POST" action="#">
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="pengambilan" style="font-weight: bold; color: #333;">Lokasi Pengambilan</label>
-                            <select id="lkPengambilan" class="form-control" style="border-radius: 15px;">
-                                <option selected>Pilih Lokasi Pengambilan</option>
-                                <!-- Daftar Mobil -->
-                                <?php 
-                                    $mobil = mysqli_query($koneksi, "SELECT * FROM tb_mobil");
-                                    foreach ($mobil as $key) :
-                                ?>
-                                <option value="<?php echo $key['gambar']; ?>" ><?php echo $key['nama_mobil']; ?></option>
-                                <?php endforeach; ?>
-                            </select>
-
-                            <label class="mt-3" for="merek" style="font-weight: bold; color: #333;">Merek Mobil</label>
-                            
-                            <select  id="merekMobil" class="form-control" style="border-radius: 15px;" onchange="carImg()">
-                                <option selected value="src/photo/car-img/default.jpg">Pilih Merek Mobil</option>
-                                <!-- Daftar Mobil -->
-                                <?php 
-                                    $mobil = mysqli_query($koneksi, "SELECT * FROM tb_mobil");
-                                    foreach ($mobil as $key) :
-                                ?>
-                                <option value="<?php echo $key['gambar']; ?>" ><?php echo $key['nama_mobil']; ?></option>
-                                <?php endforeach; ?>
-                            </select>
-
-                            <div class="row mt-3">
-                                <div class="col" style="max-width: 200px;">
-                                    <label for="tglsewa" style="font-weight: bold; color: #333;">Tanggal Sewa</label>
-                                    <input type="date" name="tanggal-sewa" class="form-control" style="border-radius: 15px; padding-left: 10px;" date_format>                                    
-                                </div>
-                                <div class="col">
-                                    <label for="lamasewa" style="font-weight: bold; color: #333;">Lama Sewa</label>
-                                    <select id="merekMobil" class="form-control" style="border-radius: 15px;">
-                                        <option selected>Lama Sewa</option>
-                                        <option value="8">8 Jam</option>
-                                        <option value="12">12 Jam</option>
-                                        <option value="24">24 Jam</option>
-                                    </select>                                    
-                                </div>
-                            </div>
-                            <div class="btn-daftar" >
-                                <button class="btn btn-success mt-3" style="width:100%; border-radius: 15px;">Sewa Sekarang</button>
-                            </div>
-                        </div>
-                        <div class="col mt-3" style="margin-left: 30px;" align="center">
-                            <img id="gambarMobil" src="src/photo/car-img/default.jpg" alt="" style="max-width: 300px; border-radius: 15px;">
-                            <div class="keterangan mt-3" align="center">
-                                <label for="car-status">Status: <b style="color: green">Ready</b></label><br>
-                                <label id="harga" for="harga">Harga Sewa : <b style="color: red">Rp. 2.400.000</b></label>
-                            </div>
-                        </div>
-
-                    </div>
-                    </form>
-                </div>
+            <p class="pt-4 text-black text-lg-start" style="font-size: large; width: 32rem;">Re<b>Car</b> merupakan sebuah platform yang menyediakan jasa penyewaan / rental mobil. Kami telah memiliki kantor cabang di 23 Provinsi di Indonesia!</p>
+            <a class="btn" style="color: #ffffff; background-color: #00C72C;" href="#"> Sewa Sekarang</a>
           </div>
         </div>
       </div>
-    </div>
     </section>
-  </body>
-  <script>
-    AOS.init()
+    <!-- Akhir Desc -->
+    <!-- Awal Paket Card -->
+    <section id="paket">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-6 pb-6 text-center">
+            <h2>bronze</h2>
+          </div>
+          <div class="col-md-6 pb-6 text-center">
+            <h2>Silver</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pb-6 d-flex justify-content-center">
 
-    function carImg() {
-        var x = document.getElementById("merekMobil").value;
-        document.getElementById("gambarMobil").src = x;  
-        }
-  </script>
+            <div class="card d-flex justify-content-center" style="width: 21rem">
+              <img class="card-img-top m-0" src="/src/photo/Bronze.png" alt="Card image cap" />
+              <div class="card-body">
+                <h2 class="card-title text-center">Car Only</h2>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/Check.png" class="" width="30rem" />
+                  Unit Mobil
+                </h5>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/emojione-v1_cross-mark.png" class="" width="25rem" />
+                  BBM
+                </h5>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/emojione-v1_cross-mark.png" class="" width="25rem" />
+                  Biaya Tol dan Parkir
+                </h5>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/emojione-v1_cross-mark.png" class="" width="25rem" />
+                  Driver
+                </h5>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/emojione-v1_cross-mark.png" class="" width="25rem" />
+                  Konsumsi Driver
+                </h5>
+                <a href="sewamobil.html" class="btn w-50 text-white m-5" style="background-color: #396eb0">Pesan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pb-6 d-flex justify-content-center">
+            <div class="card d-flex justify-content-center" style="width: 21rem">
+              <img class="card-img-top" src="src/photo/silver.png" alt="Card image cap" />
+              <div class="card-body">
+                <h2 class="card-title text-center">Car + Driver</h2>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/Check.png" class="" width="30rem" />
+                  Unit Mobil
+                </h5>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/Check.png" class="" width="30rem" />
+                  BBM
+                </h5>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/Check.png" class="" width="30rem" />
+                  Biaya Tol dan Parkir
+                </h5>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/Check.png" class="" width="30rem" />
+                  Driver
+                </h5>
+                <h5 class="text-start m-3">
+                  <img src="/src/photo/Check.png" class="" width="30rem" />
+                  Konsumsi Driver
+                </h5>
+                <a href="sewamobil.html" class="btn w-50 text-white m-5" style="background-color: #396eb0">Pesan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Card -->
+    <!-- awal search -->
+    <section class="Search">
+      <div class="container mt-5 mb-5">
+        <h3 class="ms-5 mb-5" style="margin-left: 20rem;">Ingin Sewa Mobil Apa?</h3>
+        <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+          <i class="bi bi-search me-3"></i>
+          <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search" />
+        </form>
+      </div>
+    </section>
+    <!-- akhir search -->
+    <!-- footer -->
+    <section class="footer">
+      <footer class="text-white mt-5" style="background-color: #222222;">
+        <!-- Grid container -->
+        <div class="container p-4 mt-5">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <img src="/src/photo/recaricon.png" alt="" class="mb-3" />
+              <h3> Pengaduan Layanan :</h3>
+              <p>CS.Recar@gmail.com</p>
+              <p>82329123819</p>
+            </div>
+
+            <!--Grid column-->
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #111">
+          © 2021 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">K4 MDPL Praktik</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+    <!-- akhir footer -->
 </html>
