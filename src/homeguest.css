@@ -5,3 +5,23 @@
 html {
   margin: 0;
 }
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  text-align: center;
+
+  margin-bottom: 10px; /* Added */
+}
+
+.card #judulCard {
+  background-color: black;
+}
+
+.container .perbandingan {
+  margin-top: 2rem;
+}
+
+#cardPacket {
+  box-shadow: 2px 0px 0px 0px rgba(red, green, blue, 0.5);
+}
